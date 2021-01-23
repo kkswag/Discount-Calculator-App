@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="original price" />
+    <EditText
+        android:id="@+id/ori"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="percent off (%)" />
+
+    <EditText
+        android:id="@+id/per"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Include Vat 7%"/>
+
+        <Button
+            android:id="@+id/cal"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="CALCULATE"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black"
+            android:backgroundTint="#BEBBBB"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="price" />
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/out"
+        android:gravity="end"
+        android:text=" "
+        android:textSize="48dp"/>
+
+</LinearLayout>
